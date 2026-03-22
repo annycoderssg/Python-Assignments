@@ -19,6 +19,7 @@ A collection of Python programming assignments and practice exercises covering c
 | `Assignment_9/` | File handling, OS module |
 | `Assignment10/` | System programming, advanced topics |
 | `Assignments_11/` | Cryptography, hashing (`hashlib`) |
+| `Assignments_12/` | OOP advanced — encapsulation, abstract classes, multiple inheritance, operator overloading, `@staticmethod`, `@classmethod` |
 
 ### Practice Scripts (Root Level)
 
@@ -44,6 +45,13 @@ A collection of Python programming assignments and practice exercises covering c
 - Python fundamentals (variables, control flow, functions)
 - Data structures (lists, tuples, sets, dictionaries)
 - Object-Oriented Programming (classes, inheritance, polymorphism)
+  - Encapsulation (`_protected`, `__private`, `@property`)
+  - Inheritance with `super()`
+  - Method overriding and runtime polymorphism
+  - Abstract classes (`abc.ABC`, `@abstractmethod`)
+  - Multiple inheritance and MRO
+  - Operator overloading (`__add__`, `__str__`, `__eq__`, `__len__`, etc.)
+  - `@staticmethod` and `@classmethod`
 - Functional programming (lambda, `map`, `filter`, `reduce`)
 - Decorators and closures
 - File I/O and OS operations
@@ -63,6 +71,18 @@ Run any script directly:
 ```bash
 python <filename>.py
 ```
+
+## Assignments_12 — Advanced OOP Exercises
+
+| File | Concept | Key Features |
+|------|---------|-------------|
+| `Assignment1.py` | Encapsulation | `_protected`, `__private`, `@property` getter/setter with validation |
+| `Assignment2.py` | Inheritance + `super()` | `Person` → `Student` / `Teacher`; `super().__init__()`, `isinstance()`, `issubclass()` |
+| `Assignment3.py` | Method Overriding & Polymorphism | `Shape` → `Circle` / `Rectangle` / `Triangle`; same `Area()` call, different result |
+| `Assignment4.py` | Abstract Classes | `abc.ABC` + `@abstractmethod`; `Vehicle` → `Car` / `ElectricCar` / `Truck` |
+| `Assignment5.py` | Multiple Inheritance & MRO | `Flyable`, `Swimmable`, `Walkable`; `Duck` inherits all three; Mixin pattern; `__mro__` |
+| `Assignment6.py` | Operator Overloading | `Vector` with `__add__`, `__sub__`, `__mul__`, `__eq__`, `__lt__`, `__len__`, `__str__` |
+| `Assignment7.py` | `@staticmethod` & `@classmethod` | `Temperature` conversions (static); `FromFahrenheit` alternative constructor (classmethod) |
 
 ## Changelog
 
