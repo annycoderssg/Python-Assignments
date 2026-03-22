@@ -20,6 +20,7 @@ A collection of Python programming assignments and practice exercises covering c
 | `Assignment10/` | System programming, advanced topics |
 | `Assignments_11/` | Cryptography, hashing (`hashlib`) |
 | `Assignments_12/` | OOP advanced — encapsulation, abstract classes, multiple inheritance, operator overloading, `@staticmethod`, `@classmethod` |
+| `Assignments_13/` | Multithreading, multiprocessing, and multitasking (asyncio) — synchronization, pools, shared memory, async/await |
 
 ### Practice Scripts (Root Level)
 
@@ -55,7 +56,9 @@ A collection of Python programming assignments and practice exercises covering c
 - Functional programming (lambda, `map`, `filter`, `reduce`)
 - Decorators and closures
 - File I/O and OS operations
-- Multithreading and multiprocessing
+- Multithreading — `Lock`, `RLock`, `Event`, `Semaphore`, `queue.Queue`, `ThreadPoolExecutor`, daemon threads
+- Multiprocessing — `Process`, `Queue`, `Pipe`, `Pool`, `ProcessPoolExecutor`, shared `Value`/`Array`, `Lock`
+- Multitasking / Async I/O — `asyncio`, `async/await`, `gather`, `create_task`, `asyncio.Queue`
 - Network programming
 - Sorting and searching algorithms
 - Cryptography basics
@@ -71,6 +74,18 @@ Run any script directly:
 ```bash
 python <filename>.py
 ```
+
+## Assignments_13 — Multithreading, Multiprocessing & Multitasking
+
+| File | Topic | Key Features |
+|------|-------|-------------|
+| `Assignment1.py` | Thread Synchronization | `Lock`, `RLock`; race condition demo vs. safe counter |
+| `Assignment2.py` | Thread Communication | `Event` (signal between threads), `Semaphore` (limit concurrency), `queue.Queue` (producer-consumer) |
+| `Assignment3.py` | Thread Pool & Daemon Threads | `ThreadPoolExecutor`, `submit()`, `map()`, `as_completed()`, daemon thread |
+| `Assignment4.py` | Multiprocessing Basics | `Process`, `Queue` (IPC), `Pipe` (bidirectional), `os.getpid()` |
+| `Assignment5.py` | Process Pool | `Pool.map()`, `Pool.starmap()`, `Pool.apply_async()`, `ProcessPoolExecutor` |
+| `Assignment6.py` | Shared Memory & Process Sync | `multiprocessing.Lock`, `Value`, `Array`; race condition vs. safe parallel sum |
+| `Assignment7.py` | Async I/O (Multitasking) | `async def`, `await`, `asyncio.sleep()`, `gather()`, `create_task()`, `asyncio.Queue` |
 
 ## Assignments_12 — Advanced OOP Exercises
 
