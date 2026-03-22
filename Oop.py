@@ -5,12 +5,10 @@ class Arithmatic:
         self.No2 = B
 
     def Addition(self):
-        Ans = 0
         Ans = self.No1 + self.No2
         return Ans
 
     def Subtraction(self):
-        Ans = 0
         Ans = self.No1 - self.No2
         return Ans
 

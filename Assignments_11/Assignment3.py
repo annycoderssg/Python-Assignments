@@ -1,103 +1,102 @@
-from sys import *
+import sys
 import os
 import hashlib
 
-def DisplayDuplicates( dict1 ):
-    results = list( filter(lambda x: len(x) > 1, dict1.values() ) )
+def DisplayDuplicates(dict1):
+    results = list(filter(lambda x: len(x) > 1, dict1.values()))
 
     icount = 0
     iFound = 0
-    if len( results ) > 0:
+    if len(results) > 0:
         for result in results:
             for subresult in result:
-                icount+= 1
+                icount += 1
                 if icount >= 2:
-                    print( "Diplicate File: ", subresult )
+                    iFound += 1
+                    print("Duplicate File: ", subresult)
             icount = 0
 
-        print( "Number of duplicates file and deleted : ", iFound )
+        print("Number of duplicate files found: ", iFound)
     else:
-        print( "No duplicate files found" )
+        print("No duplicate files found")
 
-def hashfile( path, blocksize = 1024 ):
-    afile = open( path, 'rb' )
-    hasher = hashlib.md5()
-    buf = afile.read( blocksize )
-
-    while len( buf ) > 0:
-        hasher.update( buf )
-        buf = afile.read( blocksize )
-    afile.close()
-
+def hashfile(path, blocksize=1024):
+    with open(path, 'rb') as afile:
+        hasher = hashlib.sha256()
+        buf = afile.read(blocksize)
+        while len(buf) > 0:
+            hasher.update(buf)
+            buf = afile.read(blocksize)
     return hasher.hexdigest()
 
-def searchDuplicates( path ):
+def searchDuplicates(path):
+    if not os.path.isabs(path):
+        path = os.path.abspath(path)
 
-    if False == os.path.isabs( path ):
-        path = os.path.abspath( path )
-
-    arrDiplicates = {}
-    if os.path.isdir( path ):
-        for dirName, subdirs, fileList in os.walk( path ):
-            print( "Current folder is : " + dirName )
+    arrDuplicates = {}
+    if os.path.isdir(path):
+        for dirName, subdirs, fileList in os.walk(path):
+            print("Current folder is : " + dirName)
             for filen in fileList:
-                path = os.path.join( dirName, filen )
-                file_hash = hashfile( path )
+                filepath = os.path.join(dirName, filen)
+                file_hash = hashfile(filepath)
 
-                if file_hash in arrDiplicates:
-                    arrDiplicates[file_hash].append( path )
+                if file_hash in arrDuplicates:
+                    arrDuplicates[file_hash].append(filepath)
                 else:
-                    arrDiplicates[file_hash] = [path]
+                    arrDuplicates[file_hash] = [filepath]
 
-        return arrDiplicates
+        return arrDuplicates
     else:
-        print( "Invalid Path" )
+        print("Invalid Path")
+        return {}
 
-def DeleteDuplicateAndLog( dict1 ):
-    results = list( filter( lambda x: len(x) > 1, dict1.values() ) )
-    objFile = open( "Log.txt", "w" )
+def DeleteDuplicateAndLog(dict1):
+    results = list(filter(lambda x: len(x) > 1, dict1.values()))
 
-    if len( results ) > 0:
-        print( "Duplicates Found:" )
-        print( "The following files are duplicate we delete it & write into Log.txt" )
-        for result in results:
-            for subresult in result:
-                objFile.write( subresult )
-                objFile.write( "\n" )
-                os.remove( subresult )
-                print("\t%s" %subresult )
-    else:
-        print( "No duplicate file found." )
-
-    objFile.close()
+    with open("Log.txt", "w") as objFile:
+        if len(results) > 0:
+            print("Duplicates Found:")
+            print("The following files are duplicates and will be deleted:")
+            for result in results:
+                for subresult in result[1:]:  # Keep first copy, delete the rest
+                    print("\t%s" % subresult)
+                    confirm = input("Delete this file? (y/n): ").strip().lower()
+                    if confirm == 'y':
+                        objFile.write(subresult)
+                        objFile.write("\n")
+                        os.remove(subresult)
+                        print("\tDeleted: %s" % subresult)
+                    else:
+                        print("\tSkipped: %s" % subresult)
+        else:
+            print("No duplicate file found.")
 
 def main():
+    print("Application Name : " + sys.argv[0])
 
-    print( "Application Name : " + argv[0] )
-
-    if( len(argv) != 2 ):
+    if len(sys.argv) != 2:
         print("Error: Invalid number of arguments")
-        exit()
+        sys.exit()
 
-    if( argv[1] == "-h" or argv[1] == "-H" ):       # Flag for displaying usage of help
-        print("Help: This script is used to traverse specific directory and display size of files")
-        exit()
-    
-    elif( argv[1] == "-u" or argv[1] == "-U" ):       # Flag for displaying usage of script
-        print( "Usage: Application_name AbsolutePath_of_directory")
-        print( "Example: Assignment3.py Demo")
-        exit()
+    if sys.argv[1] == "-h" or sys.argv[1] == "-H":
+        print("Help: This script is used to traverse specific directory and delete duplicate files")
+        sys.exit()
+
+    elif sys.argv[1] == "-u" or sys.argv[1] == "-U":
+        print("Usage: Application_name AbsolutePath_of_directory")
+        print("Example: Assignment3.py Demo")
+        sys.exit()
 
     try:
-        arr = {}
-        arr = searchDuplicates( argv[1] )
-        DeleteDuplicateAndLog( arr )
+        arr = searchDuplicates(sys.argv[1])
+        DeleteDuplicateAndLog(arr)
 
     except ValueError:
-        print( "Error: Invalid datatype of input" ) 
+        print("Error: Invalid datatype of input")
 
     except Exception as E:
-        print( "Error: Invalid input", E )
+        print("Error: Invalid input", E)
 
 if __name__ == "__main__":
     main()

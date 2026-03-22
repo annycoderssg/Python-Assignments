@@ -6,12 +6,10 @@ class Numbers:
 
     def ChkPrime(self):
         if self.intValue > 1:
-            for i in range(2, int(self.intValue/2)+1):
+            for i in range(2, int(self.intValue / 2) + 1):
                 if 0 == (self.intValue % i):
-                    return True
-                break
-            else:
-                return False
+                    return False
+            return True
         else:
             return False
 
@@ -43,12 +41,12 @@ def main():
     intNumber = int( input("Enter Number 1: ") )
 
     objNumbers = Numbers( intNumber )
-    if( True == objNumbers.ChkPrime() ):
+    if objNumbers.ChkPrime():
         print( "Number is Prime" )
     else:
         print( "Number is not Prime" )
     
-    if( True == objNumbers.ChkPerfect() ):
+    if objNumbers.ChkPerfect():
         print( "Number is Perfect" )
     else:
         print( "Number is not Perfect" )
@@ -58,12 +56,12 @@ def main():
     intNumber = int( input("Enter Number 2: ") )
 
     objNumbers2 = Numbers( intNumber )
-    if( True == objNumbers2.ChkPrime() ):
+    if objNumbers2.ChkPrime():
         print( "Number is Prime" )
     else:
         print( "Number is not Prime" )
     
-    if( True == objNumbers2.ChkPerfect() ):
+    if objNumbers2.ChkPerfect():
         print( "Number is Perfect" )
     else:
         print( "Number is not Perfect" )

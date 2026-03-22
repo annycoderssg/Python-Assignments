@@ -63,3 +63,65 @@ Run any script directly:
 ```bash
 python <filename>.py
 ```
+
+## Changelog
+
+### Bug Fixes
+
+#### `Assignments_6/Assignment_2.py` — BankAccount
+- Fixed `Withdrow` typo → renamed to `Withdraw`
+- Fixed critical bug in `CalculateInterest`: was overwriting balance instead of adding interest (`=` → `+=`)
+
+#### `Assignments_6/Assignment_3.py` — Numbers (Prime/Perfect)
+- Fixed prime checker logic: `ChkPrime` was returning `True` when a divisor was found (meaning not prime) and had an unreachable `break` — corrected to return `False` on divisibility, `True` otherwise
+- Replaced explicit `True ==` boolean comparisons with Pythonic `if condition:` style
+
+#### `Assignments_11/Assignment1.py` — Checksum Tool
+- Replaced `from sys import *` with `import sys`
+- Upgraded hash algorithm from MD5 to SHA-256 for stronger file integrity
+- Fixed path construction in `os.walk` loop (used `path` instead of `dirName`, breaking subdirectory traversal)
+- Fixed typo: `exits` → `exists`
+- Used context manager (`with open(...)`) for safe file handling
+
+#### `Assignments_11/Assignment2.py` — Duplicate File Finder
+- Replaced `from sys import *` with `import sys`
+- Upgraded hash algorithm from MD5 to SHA-256
+- Fixed path variable shadowing inside `os.walk` loop (`path` → `filepath`)
+- Fixed function name typo: `LogDiplicateFiles` → `LogDuplicateFiles`
+- Fixed print message typo: `"Diplicate"` → `"Duplicate"`
+- Fixed misleading message: "deleted" → "found"
+- Fixed `iFound` counter (was never incremented)
+- Used context manager for file writes
+
+#### `Assignments_11/Assignment3.py` — Duplicate File Deleter
+- Replaced `from sys import *` with `import sys`
+- Upgraded hash algorithm from MD5 to SHA-256
+- Fixed path variable shadowing inside `os.walk` loop (`path` → `filepath`)
+- Added per-file confirmation prompt before deletion to prevent accidental data loss
+- Fixed deletion logic to preserve the first copy and only delete true duplicates
+- Updated help message to accurately describe the script's purpose
+- Used context manager for file writes
+
+#### `Assignments_7/Assignment_2.py` — Threading (Even/Odd Factors)
+- Removed duplicate `if` conditions inside `EvenFactor` and `OddFactor` loops
+
+#### `Assignments_7/Assignment_4.py` — Threading (String Analysis)
+- Replaced `if True == strString[i].islower()` with `if strString[i].islower()`
+- Fixed `Digits` function: was printing total string length instead of digit count
+
+#### `Assignments_4/Assignment2.py` — Lambda Multiplication
+- Fixed copy-paste error in input prompt: second prompt said "Enter Number 1" → corrected to "Enter Number 2"
+
+#### `MultiThreading1.py`
+- Fixed copy-paste error in `Task2`: loop was printing `"Task1"` → corrected to `"Task2"`
+
+#### `Disctionary.py`
+- Fixed author name typos: `"Dennis Riche"` → `"Dennis Ritchie"`, `"Stroustrp"` → `"Bjarne Stroustrup"`, `"Guido Van Rusum"` → `"Guido Van Rossum"`
+- Fixed variable name typo: `Aouthers` → `Authors`
+- Removed unnecessary trailing semicolons
+
+#### `Oop.py`
+- Removed dead assignments (`Ans = 0`) immediately overwritten on the next line
+
+#### `Function10.py`
+- Fixed variable name typo: `Adition` → `Addition`

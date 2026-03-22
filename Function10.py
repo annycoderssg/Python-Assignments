@@ -5,10 +5,10 @@ Sub = lambda A, B : A - B
 
 def Marvellous( fptr1, fptr2 ):
     print("Function Type: ", type(fptr1))
-    Adition = fptr1(30, 10)
+    Addition = fptr1(30, 10)
     Subtraction = fptr2(30, 10)
 
-    return Adition,Subtraction
+    return Addition, Subtraction
 
 def main():
     Ret = Marvellous(Add, Sub)

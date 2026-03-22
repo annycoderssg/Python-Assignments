@@ -1,61 +1,55 @@
-from sys import *
+import sys
 import os
 import hashlib
 
-def hashfile( path, blocksize = 1024 ):
-
-    afile = open( path, 'rb')
-    hasher = hashlib.md5()
-
-    buf = afile.read(blocksize)
-    while len(buf) > 0:
-        hasher.update(buf)
+def hashfile(path, blocksize=1024):
+    with open(path, 'rb') as afile:
+        hasher = hashlib.sha256()
         buf = afile.read(blocksize)
-
-    afile.close()
-
+        while len(buf) > 0:
+            hasher.update(buf)
+            buf = afile.read(blocksize)
     return hasher.hexdigest()
 
-def DisplayChecksum( path ):
-    flag = os.path.isabs( path )
-    if False == flag:
+def DisplayChecksum(path):
+    if not os.path.isabs(path):
         path = os.path.abspath(path)
-    
-    exits = os.path.isdir(path)
 
-    if exits:
-        for dirName, subDirs, fileList in os.walk( path ):
+    exists = os.path.isdir(path)
+
+    if exists:
+        for dirName, subDirs, fileList in os.walk(path):
             for file in fileList:
-                file = os.path.join( path, file )
-                file_hash = hashfile( file )
-                print( ' ' )
-                print( file, ' => ', file_hash )
+                filepath = os.path.join(dirName, file)
+                file_hash = hashfile(filepath)
+                print(' ')
+                print(filepath, ' => ', file_hash)
 
 def main():
-    print( "Application Name : " + argv[0] )
+    print("Application Name : " + sys.argv[0])
 
-    if( len(argv) != 2 ):
+    if len(sys.argv) != 2:
         print("Error: Invalid number of arguments")
-        exit()
-    
-    if( argv[1] == "-h" or argv[1] == "-H" ):       # Flag for displaying usage of help
+        sys.exit()
+
+    if sys.argv[1] == "-h" or sys.argv[1] == "-H":
         print("Help: This script is used to traverse specific directory and display checksum of files")
-        exit()
-    
-    elif( argv[1] == "-u" or argv[1] == "-U" ):       # Flag for displaying usage of script
-        print( "Usage: Application_name AbsolutePath_of_directory" )
-        print( "Example: Assignment1.py Demo" )
-        exit()
+        sys.exit()
+
+    elif sys.argv[1] == "-u" or sys.argv[1] == "-U":
+        print("Usage: Application_name AbsolutePath_of_directory")
+        print("Example: Assignment1.py Demo")
+        sys.exit()
 
     try:
-        print( "Display Checksum: ")
-        DisplayChecksum( argv[1] )
+        print("Display Checksum: ")
+        DisplayChecksum(sys.argv[1])
 
     except ValueError:
-        print( "Error: Invalid datatype of input" )
+        print("Error: Invalid datatype of input")
 
     except Exception as E:
-        print( "Error: Invalid input", E )
+        print("Error: Invalid input", E)
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
 def main():
 
-    Books = {"C" : "Dennis Riche", "C++" : "Stroustrp", "Java" : "Gosling", "Python" : "Guido Van Rusum"}
+    Books = {"C" : "Dennis Ritchie", "C++" : "Bjarne Stroustrup", "Java" : "James Gosling", "Python" : "Guido Van Rossum"}
 
     print(type(Books))
 
@@ -8,17 +8,17 @@ def main():
 
     print(Books)
 
-    Language = Books.keys();
+    Language = Books.keys()
 
     print(type(Language))
 
     print(Language)
 
-    Aouthers = Books.values()
+    Authors = Books.values()
 
-    print(type(Aouthers))
+    print(type(Authors))
 
-    print(Aouthers)
+    print(Authors)
 
     for i in Books:
         print("Book Name is : ", i , " & Writer : ", Books[i])
