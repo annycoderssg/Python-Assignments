@@ -23,7 +23,7 @@ pip --version
 
 ### 1. Navigate to the project folder
 ```bash
-cd "C:\Users\Anand S\Study\Projects\Python-Assignments"
+cd "\Projects\Python-Assignments"
 ```
 
 ### 2. Create a virtual environment
