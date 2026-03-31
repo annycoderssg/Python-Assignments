@@ -1,162 +1,466 @@
 # Python Assignments
 
-A collection of Python programming assignments and practice exercises covering core and advanced Python concepts.
+A comprehensive collection of Python programming assignments and practice exercises — from core fundamentals through advanced concurrency, OOP, file handling, cryptography, and automation with ML.
+
+---
+
+## Prerequisites
+
+| Tool | Version | Download |
+|------|---------|----------|
+| Python | 3.10+ | https://www.python.org/downloads/ |
+| pip | Latest | Bundled with Python |
+
+Verify your installation:
+```bash
+python --version
+pip --version
+```
+
+---
+
+## Setup — Virtual Environment
+
+### 1. Navigate to the project folder
+```bash
+cd "C:\Users\Anand S\Study\Projects\Python-Assignments"
+```
+
+### 2. Create a virtual environment
+```bash
+python -m venv venv
+```
+
+### 3. Activate the virtual environment
+
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**macOS / Linux:**
+```bash
+source venv/bin/activate
+```
+
+> Your terminal prompt will change to `(venv)` once activated.
+
+### 4. Install required packages
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Deactivate when done
+```bash
+deactivate
+```
+
+---
+
+## Dependencies
+
+All assignment folders use **Python standard library only**. The `requirements.txt` packages are only needed for the `Automation/` scripts:
+
+| Package | Used In | Purpose |
+|---------|---------|---------|
+| `numpy` | `Automation/ML/` | Numerical computing |
+| `scikit-learn` | `Automation/ML/` | Machine learning (Iris dataset, decision tree) |
+| `psutil` | `Automation/ProcessAutomation/` | System & process monitoring |
+| `schedule` | `Automation/` | Job scheduling |
+
+> **All assignment folders (Assignments/ through Assignments_13/) require zero third-party packages.**
+
+---
 
 ## Repository Structure
 
-### Assignment Batches
+```
+Python-Assignments/
+│
+├── Assignments/            # Batch 1  — Functions & Basic I/O
+├── Assignments_2/          # Batch 2  — Reduce & Arithmetic utilities
+├── Assignments_3/          # Batch 3  — Lambda & Functional programming
+├── Assignments_4/          # Batch 4  — OOP Basics
+├── Assignments_5/          # Batch 5  — Classes & Encapsulation
+├── Assignments_6/          # Batch 6  — Inheritance & Polymorphism
+├── Assignments_7/          # Batch 7  — Multithreading
+├── Assignment_8/           # Batch 8  — Recursion & Patterns
+├── Assignment_9/           # Batch 9  — File Handling & OS module
+├── Assignment10/           # Batch 10 — System programming
+├── Assignments_11/         # Batch 11 — Cryptography & Hashing
+├── Assignments_12/         # Batch 12 — Advanced OOP
+├── Assignments_13/         # Batch 13 — Concurrency (Threads, Processes, Async)
+│
+├── File_Handling/          # File create, read, write, delete exercises
+├── Automation/             # File, Process, Mail & ML automation scripts
+│   ├── FileAutomation/
+│   ├── ProcessAutomation/
+│   ├── Mails/
+│   └── ML/
+├── DJango/                 # Django web framework exercises
+│
+├── *.py                    # Root-level practice scripts (see table below)
+├── requirements.txt        # Third-party dependencies
+└── README.md
+```
 
-| Folder | Topics Covered |
-|--------|---------------|
-| `Assignments/` | Functions, arithmetic operations, basic I/O |
-| `Assignments_2/` | Functions with `reduce`, arithmetic utilities |
-| `Assignments_3/` | Lambda functions, functional programming |
-| `Assignments_4/` | Object-Oriented Programming (OOP) basics |
-| `Assignments_5/` | Classes, encapsulation, class variables |
-| `Assignments_6/` | OOP — inheritance and polymorphism |
-| `Assignments_7/` | Multithreading |
-| `Assignment_8/` | Patterns and loops |
-| `Assignment_9/` | File handling, OS module |
-| `Assignment10/` | System programming, advanced topics |
-| `Assignments_11/` | Cryptography, hashing (`hashlib`) |
-| `Assignments_12/` | OOP advanced — encapsulation, abstract classes, multiple inheritance, operator overloading, `@staticmethod`, `@classmethod` |
-| `Assignments_13/` | Multithreading, multiprocessing, and multitasking (asyncio) — synchronization, pools, shared memory, async/await |
+---
 
-### Practice Scripts (Root Level)
+## Running the Assignments
 
-| Category | Files |
-|----------|-------|
-| Basics | `Hello.py`, `First.py`, `Variable.py`, `Starter.py` |
-| Control Flow | `For.py`, `For1-4.py`, `While.py`, `Range.py`, `Sequence.py` |
-| Functions | `Function1-13.py`, `Functions.py`, `DefaultArgument.py`, `Keyword.py`, `Positional.py`, `VariableArguments.py` |
-| Data Structures | `List1-6.py`, `ListDemo.py`, `ListFilter.py`, `ListAsDict.py`, `TupleDemo.py`, `SetDemo.py`, `Disctionary.py`, `DisctionaryDemo.py`, `DisctionaryDuplicate.py` |
-| OOP | `Oop.py`, `Oop1.py`, `Oop2.py` |
-| Decorators | `Decorator.py`, `Decorator1.py`, `Decorator2.py` |
-| File & I/O | `InputOutput.py`, `File_Handling/` |
-| Modules | `Module1.py`, `Module2.py` |
-| Multithreading | `MultiThreading1.py`, `MultiThreading2.py`, `Multi1-4.py`, `Multicore.py` |
-| Multiprocessing | `Process1.py` |
-| Networking | `Client.py`, `Serial1-3.py` |
-| Algorithms | `Factors.py`, `FactorsWhile.py`, `ReverseArray.py`, `SortArray.py`, `Selection1-3.py` |
-| FMR Series | `FMR.py`, `FMR2-11.py`, `MarvellousFMR.py` |
-| Miscellaneous | `Demo.py`, `Marvellous.py`, `Special.py`, `Pop.py`, `Addition.py`, `Command1.py`, `Command2.py` |
-
-## Topics Covered
-
-- Python fundamentals (variables, control flow, functions)
-- Data structures (lists, tuples, sets, dictionaries)
-- Object-Oriented Programming (classes, inheritance, polymorphism)
-  - Encapsulation (`_protected`, `__private`, `@property`)
-  - Inheritance with `super()`
-  - Method overriding and runtime polymorphism
-  - Abstract classes (`abc.ABC`, `@abstractmethod`)
-  - Multiple inheritance and MRO
-  - Operator overloading (`__add__`, `__str__`, `__eq__`, `__len__`, etc.)
-  - `@staticmethod` and `@classmethod`
-- Functional programming (lambda, `map`, `filter`, `reduce`)
-- Decorators and closures
-- File I/O and OS operations
-- Multithreading — `Lock`, `RLock`, `Event`, `Semaphore`, `queue.Queue`, `ThreadPoolExecutor`, daemon threads
-- Multiprocessing — `Process`, `Queue`, `Pipe`, `Pool`, `ProcessPoolExecutor`, shared `Value`/`Array`, `Lock`
-- Multitasking / Async I/O — `asyncio`, `async/await`, `gather`, `create_task`, `asyncio.Queue`
-- Network programming
-- Sorting and searching algorithms
-- Cryptography basics
-
-## Requirements
-
-- Python 3.x
-
-## Usage
-
-Run any script directly:
-
+### General Pattern
 ```bash
 python <filename>.py
 ```
 
-## Assignments_13 — Multithreading, Multiprocessing & Multitasking
+---
 
-| File | Topic | Key Features |
-|------|-------|-------------|
-| `Assignment1.py` | Thread Synchronization | `Lock`, `RLock`; race condition demo vs. safe counter |
-| `Assignment2.py` | Thread Communication | `Event` (signal between threads), `Semaphore` (limit concurrency), `queue.Queue` (producer-consumer) |
-| `Assignment3.py` | Thread Pool & Daemon Threads | `ThreadPoolExecutor`, `submit()`, `map()`, `as_completed()`, daemon thread |
-| `Assignment4.py` | Multiprocessing Basics | `Process`, `Queue` (IPC), `Pipe` (bidirectional), `os.getpid()` |
-| `Assignment5.py` | Process Pool | `Pool.map()`, `Pool.starmap()`, `Pool.apply_async()`, `ProcessPoolExecutor` |
-| `Assignment6.py` | Shared Memory & Process Sync | `multiprocessing.Lock`, `Value`, `Array`; race condition vs. safe parallel sum |
-| `Assignment7.py` | Async I/O (Multitasking) | `async def`, `await`, `asyncio.sleep()`, `gather()`, `create_task()`, `asyncio.Queue` |
+### Batch 1 — `Assignments/` : Functions & Basic I/O
 
-## Assignments_12 — Advanced OOP Exercises
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `Assignment1.py` | Function returning a greeting string | No |
+| `Assignment2.py` | Basic arithmetic function | No |
+| `Assignment3.py` | Function with parameters | No |
+| `Assignment5.py` | Countdown loop from 10 to 1 | No |
+| `Assignment10.py` | Get string length from user | Yes — enter a string |
 
-| File | Concept | Key Features |
-|------|---------|-------------|
-| `Assignment1.py` | Encapsulation | `_protected`, `__private`, `@property` getter/setter with validation |
-| `Assignment2.py` | Inheritance + `super()` | `Person` → `Student` / `Teacher`; `super().__init__()`, `isinstance()`, `issubclass()` |
-| `Assignment3.py` | Method Overriding & Polymorphism | `Shape` → `Circle` / `Rectangle` / `Triangle`; same `Area()` call, different result |
-| `Assignment4.py` | Abstract Classes | `abc.ABC` + `@abstractmethod`; `Vehicle` → `Car` / `ElectricCar` / `Truck` |
-| `Assignment5.py` | Multiple Inheritance & MRO | `Flyable`, `Swimmable`, `Walkable`; `Duck` inherits all three; Mixin pattern; `__mro__` |
+```bash
+cd Assignments
+python Assignment1.py
+```
+
+---
+
+### Batch 2 — `Assignments_2/` : Reduce & Arithmetic Utilities
+
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `Assignment1.py` | Sum of user-provided numbers using `reduce` | Yes — enter numbers |
+| `Assignment2.py` | Arithmetic operations using local module | Yes |
+| `Assignment3.py` | Functional reduce operations | Yes |
+
+```bash
+cd Assignments_2
+python Assignment1.py
+```
+
+---
+
+### Batch 3 — `Assignments_3/` : Lambda & Functional Programming
+
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `Assignment1.py` | `reduce` with a custom Add function on a list | No |
+| `Assignment2.py` | Filter with lambda | No |
+| `Assignment3.py` | Map with lambda | No |
+| `Assignment4.py` | Lambda-based power calculation using `reduce` | No |
+| `Assignment5.py` | Combined filter, map, reduce | No |
+
+```bash
+cd Assignments_3
+python Assignment1.py
+```
+
+---
+
+### Batch 4–6 — OOP (Basics → Inheritance → Polymorphism)
+
+| Folder | Concepts |
+|--------|---------|
+| `Assignments_4/` | Classes, objects, methods, constructors |
+| `Assignments_5/` | Encapsulation, class variables, instance variables |
+| `Assignments_6/` | Inheritance, method overriding, polymorphism |
+
+```bash
+cd Assignments_4
+python Assignment1.py
+
+cd ../Assignments_5
+python Assignment1.py
+
+cd ../Assignments_6
+python Assignment1.py
+```
+
+---
+
+### Batch 7 — `Assignments_7/` : Multithreading
+
+| File | Description |
+|------|-------------|
+| `Assignment_1.py` | Two threads printing even and odd numbers concurrently |
+| `Assignment_2.py` | Threading with even/odd factor calculations |
+| `Assignment_3.py` | Thread synchronization using shared state |
+| `Assignment_4.py` | String analysis across multiple threads |
+| `Assignment_5.py` | Advanced thread coordination |
+
+```bash
+cd Assignments_7
+python Assignment_1.py
+```
+
+---
+
+### Batch 8 — `Assignment_8/` : Recursion & Patterns
+
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `Assignment_1.py` | Recursive star pattern generator | Yes — enter row count |
+| `Assignment_2.py` | Number pyramid pattern | Yes |
+| `Assignment_3.py` | Recursive factorial | Yes |
+| `Assignment_4.py` | Recursive Fibonacci | Yes |
+| `Assignment_5.py` | Advanced pattern | Yes |
+
+```bash
+cd Assignment_8
+python Assignment_1.py
+# Enter: 5
+```
+
+---
+
+### Batch 9 — `Assignment_9/` : File Handling & OS Module
+
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `Assignment_1.py` | Check if a file exists using `os.path.exists()` | Yes — enter a filename |
+| `Assignment_2.py` | List files in a directory | Yes — enter a path |
+| `Assignment_3.py` | Read file contents safely | Yes — enter a filename |
+| `Assignment_4.py` | Write and append to files | Yes |
+
+```bash
+cd Assignment_9
+python Assignment_1.py
+# Enter: C:\Users\Anand S\Study\Projects\Python-Assignments\README.md
+```
+
+---
+
+### Batch 10 — `Assignment10/` : System Programming
+
+```bash
+cd Assignment10
+python Assignment1.py
+```
+
+---
+
+### Batch 11 — `Assignments_11/` : Cryptography & Hashing
+
+| File | Description | How to Run |
+|------|-------------|-----------|
+| `Assignment1.py` | Directory traversal + SHA-256 checksum calculator | `python Assignment1.py <directory_path>` |
+| `Assignment2.py` | Recursive duplicate file finder using SHA-256 | `python Assignment2.py <directory_path>` |
+| `Assignment3.py` | Duplicate file deleter (prompts before deletion) | `python Assignment3.py <directory_path>` |
+| `Assignment4.py` | File integrity checker | `python Assignment4.py <file_path>` |
+
+```bash
+cd Assignments_11
+
+# Show help
+python Assignment1.py -h
+
+# Run on a directory
+python Assignment1.py "C:\Users\Anand S\Study\Projects\Python-Assignments\Assignments_11\Demo"
+
+# Find duplicates
+python Assignment2.py "C:\Users\Anand S\Study\Projects\Python-Assignments\Assignments_11\Demo"
+
+# Delete duplicates (prompts for confirmation)
+python Assignment3.py "C:\Users\Anand S\Study\Projects\Python-Assignments\Assignments_11\Demo"
+```
+
+---
+
+### Batch 12 — `Assignments_12/` : Advanced OOP
+
+| File | Concept | Key Highlights |
+|------|---------|----------------|
+| `Assignment1.py` | Encapsulation | `_protected`, `__private`, `@property` with validation |
+| `Assignment2.py` | Inheritance & `super()` | `Person → Student / Teacher`, `isinstance()`, `issubclass()` |
+| `Assignment3.py` | Polymorphism | `Shape → Circle / Rectangle / Triangle` — same `Area()`, different result |
+| `Assignment4.py` | Abstract Classes | `abc.ABC`, `@abstractmethod`, `Vehicle → Car / ElectricCar / Truck` |
+| `Assignment5.py` | Multiple Inheritance & MRO | `Flyable`, `Swimmable`, `Walkable` → `Duck`; Mixin pattern; `__mro__` |
 | `Assignment6.py` | Operator Overloading | `Vector` with `__add__`, `__sub__`, `__mul__`, `__eq__`, `__lt__`, `__len__`, `__str__` |
-| `Assignment7.py` | `@staticmethod` & `@classmethod` | `Temperature` conversions (static); `FromFahrenheit` alternative constructor (classmethod) |
+| `Assignment7.py` | Static & Class Methods | `Temperature` with `@staticmethod` conversions, `@classmethod` constructor |
 
-## Changelog
+```bash
+cd Assignments_12
+python Assignment1.py
+python Assignment4.py
+python Assignment6.py
+```
 
-### Bug Fixes
+---
 
-#### `Assignments_6/Assignment_2.py` — BankAccount
-- Fixed `Withdrow` typo → renamed to `Withdraw`
-- Fixed critical bug in `CalculateInterest`: was overwriting balance instead of adding interest (`=` → `+=`)
+### Batch 13 — `Assignments_13/` : Concurrency
 
-#### `Assignments_6/Assignment_3.py` — Numbers (Prime/Perfect)
-- Fixed prime checker logic: `ChkPrime` was returning `True` when a divisor was found (meaning not prime) and had an unreachable `break` — corrected to return `False` on divisibility, `True` otherwise
-- Replaced explicit `True ==` boolean comparisons with Pythonic `if condition:` style
+| File | Topic | Imports |
+|------|-------|---------|
+| `Assignment1.py` | Thread Synchronization | `threading.Lock`, `RLock` — race condition demo |
+| `Assignment2.py` | Thread Communication | `Event`, `Semaphore`, `queue.Queue` — producer/consumer |
+| `Assignment3.py` | Thread Pools & Daemon Threads | `ThreadPoolExecutor`, `submit()`, `as_completed()` |
+| `Assignment4.py` | Multiprocessing Basics | `Process`, `Queue`, `Pipe`, `os.getpid()` |
+| `Assignment5.py` | Process Pools | `Pool.map()`, `Pool.starmap()`, `ProcessPoolExecutor` |
+| `Assignment6.py` | Shared Memory | `multiprocessing.Value`, `Array`, `Lock` — safe parallel sum |
+| `Assignment7.py` | Async I/O | `asyncio`, `async/await`, `gather()`, `create_task()`, `asyncio.Queue` |
 
-#### `Assignments_11/Assignment1.py` — Checksum Tool
-- Replaced `from sys import *` with `import sys`
-- Upgraded hash algorithm from MD5 to SHA-256 for stronger file integrity
-- Fixed path construction in `os.walk` loop (used `path` instead of `dirName`, breaking subdirectory traversal)
-- Fixed typo: `exits` → `exists`
-- Used context manager (`with open(...)`) for safe file handling
+```bash
+cd Assignments_13
+python Assignment1.py   # Thread safety demo
+python Assignment3.py   # ThreadPoolExecutor demo
+python Assignment7.py   # Async I/O demo
+```
 
-#### `Assignments_11/Assignment2.py` — Duplicate File Finder
-- Replaced `from sys import *` with `import sys`
-- Upgraded hash algorithm from MD5 to SHA-256
-- Fixed path variable shadowing inside `os.walk` loop (`path` → `filepath`)
-- Fixed function name typo: `LogDiplicateFiles` → `LogDuplicateFiles`
-- Fixed print message typo: `"Diplicate"` → `"Duplicate"`
-- Fixed misleading message: "deleted" → "found"
-- Fixed `iFound` counter (was never incremented)
-- Used context manager for file writes
+---
 
-#### `Assignments_11/Assignment3.py` — Duplicate File Deleter
-- Replaced `from sys import *` with `import sys`
-- Upgraded hash algorithm from MD5 to SHA-256
-- Fixed path variable shadowing inside `os.walk` loop (`path` → `filepath`)
-- Added per-file confirmation prompt before deletion to prevent accidental data loss
-- Fixed deletion logic to preserve the first copy and only delete true duplicates
-- Updated help message to accurately describe the script's purpose
-- Used context manager for file writes
+### `File_Handling/` : File Operations
 
-#### `Assignments_7/Assignment_2.py` — Threading (Even/Odd Factors)
-- Removed duplicate `if` conditions inside `EvenFactor` and `OddFactor` loops
+| File | Description | Input Required |
+|------|-------------|----------------|
+| `File_Create.py` | Create a new file | Yes — enter filename |
+| `File_Open.py` | Open and read file | Yes — enter filename |
+| `File_Read.py` | Read full file contents | Yes — enter filename |
+| `File_ReadLine.py` | Read file line by line | Yes — enter filename |
+| `File_Write.py` | Write content to file | Yes — enter filename & content |
+| `File_Overwrite.py` | Overwrite existing file | Yes |
+| `File_Delete.py` | Delete a file | Yes — enter filename |
 
-#### `Assignments_7/Assignment_4.py` — Threading (String Analysis)
-- Replaced `if True == strString[i].islower()` with `if strString[i].islower()`
-- Fixed `Digits` function: was printing total string length instead of digit count
+```bash
+cd File_Handling
+python File_Create.py
+python File_Write.py
+python File_Read.py
+```
 
-#### `Assignments_4/Assignment2.py` — Lambda Multiplication
-- Fixed copy-paste error in input prompt: second prompt said "Enter Number 1" → corrected to "Enter Number 2"
+---
 
-#### `MultiThreading1.py`
-- Fixed copy-paste error in `Task2`: loop was printing `"Task1"` → corrected to `"Task2"`
+### Root-Level Practice Scripts
 
-#### `Disctionary.py`
-- Fixed author name typos: `"Dennis Riche"` → `"Dennis Ritchie"`, `"Stroustrp"` → `"Bjarne Stroustrup"`, `"Guido Van Rusum"` → `"Guido Van Rossum"`
-- Fixed variable name typo: `Aouthers` → `Authors`
-- Removed unnecessary trailing semicolons
+#### Basics
+```bash
+python Hello.py           # Print Hello
+python Variable.py        # Variable types demo
+python Starter.py         # Getting started
+python Addition.py        # User input arithmetic
+```
 
-#### `Oop.py`
-- Removed dead assignments (`Ans = 0`) immediately overwritten on the next line
+#### Control Flow
+```bash
+python For.py             # For loop basics
+python While.py           # While loop
+python Range.py           # range() usage
+python Selection1.py      # if/elif/else
+```
 
-#### `Function10.py`
-- Fixed variable name typo: `Adition` → `Addition`
+#### Functions
+```bash
+python Function1.py       # Basic function
+python Function5.py       # Return values
+python DefaultArgument.py # Default parameters
+python Keyword.py         # Keyword arguments
+python VariableArguments.py # *args and **kwargs
+```
+
+#### Data Structures
+```bash
+python List1.py           # List basics
+python TupleDemo.py       # Tuples
+python SetDemo.py         # Sets
+python Disctionary.py     # Dictionaries
+python ListFilter.py      # Grouping with dict
+```
+
+#### OOP
+```bash
+python Oop.py             # Class with user input
+python Hdfc.py            # Bank account OOP system
+```
+
+#### Functional Programming (FMR Series)
+```bash
+python FMR.py             # Filter, Map, Reduce intro
+python FMR2.py            # Filter examples
+python FMR5.py            # Map examples
+python FMR8.py            # Reduce examples
+python MarvellousFMR.py   # Custom FMR utilities
+```
+
+#### Decorators
+```bash
+python Decorator.py       # Basic decorator
+python Decorator1.py      # Decorator with args
+python Decorator2.py      # Stacked decorators
+```
+
+#### Multithreading
+```bash
+python MultiThreading1.py  # Two concurrent threads
+python MultiThreading2.py  # Thread with sleep
+python Multicore.py        # Multi-core usage
+```
+
+#### Multiprocessing
+```bash
+python Process1.py         # Process basics
+```
+
+#### Algorithms
+```bash
+python ReverseArray.py    # Reverse an array
+python SortArray.py       # Sort an array
+python Factors.py         # Find factors of a number
+```
+
+---
+
+### `Automation/` Scripts
+
+> **Requires virtual environment with packages installed** (`numpy`, `scikit-learn`, `psutil`, `schedule`)
+
+```bash
+# Activate venv first
+venv\Scripts\activate
+
+# File Automation
+cd Automation/FileAutomation
+python Automation.py
+
+# Process Automation
+cd ../ProcessAutomation
+python <script>.py
+
+# ML
+cd ../ML
+python <script>.py
+```
+
+---
+
+## Topics Covered
+
+| Category | Topics |
+|----------|--------|
+| **Fundamentals** | Variables, data types, control flow, I/O |
+| **Functions** | Default args, keyword args, `*args`, `**kwargs`, closures |
+| **Data Structures** | Lists, tuples, sets, dictionaries |
+| **Functional Programming** | `lambda`, `map`, `filter`, `functools.reduce` |
+| **Decorators** | Basic, stacked, parameterised |
+| **OOP — Core** | Classes, objects, constructors, methods |
+| **OOP — Advanced** | Encapsulation, inheritance, polymorphism, `super()` |
+| **OOP — Expert** | Abstract classes (`abc`), multiple inheritance, MRO, operator overloading, `@staticmethod`, `@classmethod` |
+| **File I/O** | Create, read, write, append, delete with `os.path` |
+| **Algorithms** | Sorting, searching, factorisation, recursion |
+| **Cryptography** | SHA-256 hashing, file checksums, duplicate detection (`hashlib`) |
+| **Multithreading** | `Lock`, `RLock`, `Event`, `Semaphore`, `Queue`, `ThreadPoolExecutor`, daemon threads |
+| **Multiprocessing** | `Process`, `Queue`, `Pipe`, `Pool`, `ProcessPoolExecutor`, shared `Value`/`Array` |
+| **Async I/O** | `asyncio`, `async/await`, `gather()`, `create_task()`, `asyncio.Queue` |
+| **Automation** | File ops, process monitoring (`psutil`), email (`smtplib`), scheduling |
+| **Machine Learning** | Iris dataset, decision tree (`scikit-learn`, `numpy`) |
+
+---
+
+## Python Version
+
+Tested with **Python 3.10+**. All standard library features used are stable across Python 3.8+.

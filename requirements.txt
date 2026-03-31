@@ -1,0 +1,5 @@
+# Third-party packages required by Automation/ scripts
+numpy
+scikit-learn
+psutil
+schedule

@@ -1,0 +1,260 @@
+--------------------------------------------------------------------------------
+My Process Logs: Sun Oct  1 23:28:49 2023
+--------------------------------------------------------------------------------
+
+{'pid': 0, 'name': 'System Idle Process', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 0.05859375}
+{'pid': 4, 'name': 'System', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 0.28125}
+{'pid': 8, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.72265625}
+{'pid': 72, 'name': '', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 0.1796875}
+{'pid': 96, 'name': 'services.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.81640625}
+{'pid': 132, 'name': 'Registry', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 9.20703125}
+{'pid': 508, 'name': 'smss.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.08984375}
+{'pid': 588, 'name': 'lsass.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 9.203125}
+{'pid': 592, 'name': 'LsaIso.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.0625}
+{'pid': 756, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 4.98046875}
+{'pid': 860, 'name': 'csrss.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.14453125}
+{'pid': 948, 'name': 'wininit.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.453125}
+{'pid': 972, 'name': 'csrss.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.4375}
+{'pid': 1072, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 12.38671875}
+{'pid': 1104, 'name': 'WUDFHost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 9.41015625}
+{'pid': 1112, 'name': 'fontdrvhost.exe', 'username': 'Font Driver Host\\UMFD-0', 'vms': 1.89453125}
+{'pid': 1132, 'name': 'igfxEMN.exe', 'username': 'DC2\\ashinde05', 'vms': 3.67578125}
+{'pid': 1200, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 9.34765625}
+{'pid': 1260, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.09765625}
+{'pid': 1264, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.8984375}
+{'pid': 1308, 'name': 'WUDFHost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 11.88671875}
+{'pid': 1404, 'name': 'winlogon.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.50390625}
+{'pid': 1472, 'name': 'fontdrvhost.exe', 'username': 'Font Driver Host\\UMFD-1', 'vms': 2.125}
+{'pid': 1560, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 5.234375}
+{'pid': 1572, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.921875}
+{'pid': 1580, 'name': 'py.exe', 'username': 'DC2\\ashinde05', 'vms': 1.328125}
+{'pid': 1588, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 6.2109375}
+{'pid': 1596, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.6171875}
+{'pid': 1620, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.2578125}
+{'pid': 1696, 'name': 'ServiceShell.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 63.63671875}
+{'pid': 1724, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.8828125}
+{'pid': 1732, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 4.3984375}
+{'pid': 1796, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.59375}
+{'pid': 1804, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.63671875}
+{'pid': 1816, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.140625}
+{'pid': 1844, 'name': 'ApplicationFrameHost.exe', 'username': 'DC2\\ashinde05', 'vms': 8.0625}
+{'pid': 1972, 'name': 'IntelCpHDCPSvc.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.2578125}
+{'pid': 1984, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.26171875}
+{'pid': 2000, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.0546875}
+{'pid': 2032, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 15.84375}
+{'pid': 2180, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 5.609375}
+{'pid': 2212, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.57421875}
+{'pid': 2240, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 18.70703125}
+{'pid': 2252, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.26953125}
+{'pid': 2320, 'name': 'dptf_helper.exe', 'username': 'DC2\\ashinde05', 'vms': 1.54296875}
+{'pid': 2328, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.72265625}
+{'pid': 2360, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.33203125}
+{'pid': 2384, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 124.5}
+{'pid': 2408, 'name': 'igfxCUIServiceN.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.07421875}
+{'pid': 2588, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 5.39453125}
+{'pid': 2592, 'name': 'sihost.exe', 'username': 'DC2\\ashinde05', 'vms': 6.9921875}
+{'pid': 2608, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.20703125}
+{'pid': 2624, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 3.58984375}
+{'pid': 2720, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 16.671875}
+{'pid': 2768, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.88671875}
+{'pid': 2788, 'name': 'svchost.exe', 'username': 'DC2\\ashinde05', 'vms': 9.7109375}
+{'pid': 2816, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 10.546875}
+{'pid': 2848, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.7578125}
+{'pid': 2912, 'name': 'vmms.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 40.4375}
+{'pid': 3008, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 2.3359375}
+{'pid': 3028, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.671875}
+{'pid': 3064, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 4.19140625}
+{'pid': 3088, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.71484375}
+{'pid': 3100, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.50390625}
+{'pid': 3124, 'name': 'MemCompression', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 0.0390625}
+{'pid': 3144, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 2.62890625}
+{'pid': 3160, 'name': 'svchost.exe', 'username': 'DC2\\ashinde05', 'vms': 3.6328125}
+{'pid': 3164, 'name': 'conhost.exe', 'username': 'DC2\\ashinde05', 'vms': 1.40625}
+{'pid': 3172, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 4.18359375}
+{'pid': 3252, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 12.08984375}
+{'pid': 3264, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.14453125}
+{'pid': 3272, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.94921875}
+{'pid': 3364, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.5859375}
+{'pid': 3388, 'name': 'Dell.TechHub.Diagnostics.SubAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 58.37109375}
+{'pid': 3416, 'name': 'PresentationFontCache.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 25.4140625}
+{'pid': 3488, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.0390625}
+{'pid': 3560, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 10.69140625}
+{'pid': 3576, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.1328125}
+{'pid': 3584, 'name': 'svchost.exe', 'username': 'DC2\\ashinde05', 'vms': 8.33984375}
+{'pid': 3792, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 67.03515625}
+{'pid': 3856, 'name': 'vmcompute.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.94921875}
+{'pid': 3928, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 3.48046875}
+{'pid': 3972, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.09375}
+{'pid': 3988, 'name': 'wlanext.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.3671875}
+{'pid': 4036, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 4.71875}
+{'pid': 4040, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.79296875}
+{'pid': 4076, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 7.0078125}
+{'pid': 4132, 'name': 'taskhostw.exe', 'username': 'DC2\\ashinde05', 'vms': 7.25390625}
+{'pid': 4136, 'name': 'spoolsv.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 5.4765625}
+{'pid': 4172, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 52.953125}
+{'pid': 4192, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 75.00390625}
+{'pid': 4220, 'name': 'mDNSResponder.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.8046875}
+{'pid': 4232, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.5703125}
+{'pid': 4248, 'name': 'armsvc.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.546875}
+{'pid': 4288, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.3203125}
+{'pid': 4296, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 4.765625}
+{'pid': 4304, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 40.60546875}
+{'pid': 4356, 'name': 'esif_uf.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.08984375}
+{'pid': 4364, 'name': 'OneApp.IGCC.WinService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 36.3359375}
+{'pid': 4380, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 22.109375}
+{'pid': 4428, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.74609375}
+{'pid': 4436, 'name': 'IntelAudioService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 38.0390625}
+{'pid': 4584, 'name': 'dwm.exe', 'username': 'Window Manager\\DWM-1', 'vms': 92.25390625}
+{'pid': 4592, 'name': 'SentinelServiceHost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 22.69140625}
+{'pid': 4600, 'name': 'dcagentservice.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.6171875}
+{'pid': 4616, 'name': 'jhi_service.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.34765625}
+{'pid': 4640, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.68359375}
+{'pid': 4648, 'name': 'FileCoAuth.exe', 'username': 'DC2\\ashinde05', 'vms': 4.38671875}
+{'pid': 4712, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 5.734375}
+{'pid': 4724, 'name': 'OcsService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.8125}
+{'pid': 4732, 'name': 'PanGPS.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 9.6171875}
+{'pid': 4760, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.62109375}
+{'pid': 4784, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.171875}
+{'pid': 4828, 'name': 'RtkAudUService64.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 5.20703125}
+{'pid': 4836, 'name': 'TbtP2pShortcutService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.30859375}
+{'pid': 4856, 'name': 'SentinelAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 24.0703125}
+{'pid': 4872, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.48046875}
+{'pid': 4960, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.24609375}
+{'pid': 4968, 'name': 'tvnserver.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.26171875}
+{'pid': 4976, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.3046875}
+{'pid': 5028, 'name': 'WavesAudioService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 12.1953125}
+{'pid': 5064, 'name': 'WMIRegistrationService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.72265625}
+{'pid': 5072, 'name': 'WavesSysSvc64.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 11.57421875}
+{'pid': 5112, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 17.37109375}
+{'pid': 5220, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.3359375}
+{'pid': 5268, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 4.15625}
+{'pid': 5356, 'name': 'dllhost.exe', 'username': 'DC2\\ashinde05', 'vms': 3.140625}
+{'pid': 5372, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 2.59765625}
+{'pid': 5380, 'name': 'SearchIndexer.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 23.09765625}
+{'pid': 5424, 'name': 'TSVNCache.exe', 'username': 'DC2\\ashinde05', 'vms': 35.31640625}
+{'pid': 5812, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.5234375}
+{'pid': 5832, 'name': 'WmiPrvSE.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 14.55078125}
+{'pid': 5856, 'name': 'dcswmeter.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 5.640625}
+{'pid': 5872, 'name': 'StartMenuExperienceHost.exe', 'username': 'DC2\\ashinde05', 'vms': 55.0234375}
+{'pid': 5988, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 3.43359375}
+{'pid': 6072, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 2.28125}
+{'pid': 6112, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 2.52734375}
+{'pid': 6136, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.296875}
+{'pid': 6184, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.09765625}
+{'pid': 6464, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 2.16015625}
+{'pid': 6512, 'name': 'WmiPrvSE.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 36.84375}
+{'pid': 6620, 'name': 'RtkAudUService64.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.83984375}
+{'pid': 6860, 'name': 'sublime_text.exe', 'username': 'DC2\\ashinde05', 'vms': 93.38671875}
+{'pid': 6904, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 47.234375}
+{'pid': 6916, 'name': 'ctfmon.exe', 'username': 'DC2\\ashinde05', 'vms': 4.33984375}
+{'pid': 7080, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.76953125}
+{'pid': 7184, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 1.3828125}
+{'pid': 7384, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.51953125}
+{'pid': 7396, 'name': 'SystemSettings.exe', 'username': 'DC2\\ashinde05', 'vms': 55.1328125}
+{'pid': 7432, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 185.90234375}
+{'pid': 7588, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 11.390625}
+{'pid': 7592, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.58984375}
+{'pid': 7612, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.84375}
+{'pid': 7692, 'name': 'Dell.TechHub.Analytics.SubAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 56.6953125}
+{'pid': 7816, 'name': 'DDVRulesProcessor.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.18359375}
+{'pid': 8012, 'name': 'explorer.exe', 'username': 'DC2\\ashinde05', 'vms': 259.47265625}
+{'pid': 8200, 'name': 'SearchApp.exe', 'username': 'DC2\\ashinde05', 'vms': 183.87109375}
+{'pid': 8260, 'name': 'PanGPA.exe', 'username': 'DC2\\ashinde05', 'vms': 4.703125}
+{'pid': 8336, 'name': 'SearchApp.exe', 'username': 'DC2\\ashinde05', 'vms': 157.23828125}
+{'pid': 8344, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 8.2109375}
+{'pid': 8480, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 54.52734375}
+{'pid': 8548, 'name': 'SkypeApp.exe', 'username': 'DC2\\ashinde05', 'vms': 48.30859375}
+{'pid': 8596, 'name': 'SkypeBackgroundHost.exe', 'username': 'DC2\\ashinde05', 'vms': 2.04296875}
+{'pid': 8764, 'name': 'Dell.TechHub.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 40.953125}
+{'pid': 8800, 'name': 'SentinelUI.exe', 'username': 'DC2\\ashinde05', 'vms': 23.3125}
+{'pid': 8924, 'name': 'CompPkgSrv.exe', 'username': 'DC2\\ashinde05', 'vms': 1.61328125}
+{'pid': 8952, 'name': 'RuntimeBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 4.21484375}
+{'pid': 9016, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 2.671875}
+{'pid': 9036, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 31.484375}
+{'pid': 9060, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 39.12890625}
+{'pid': 9108, 'name': 'UserOOBEBroker.exe', 'username': 'DC2\\ashinde05', 'vms': 2.19921875}
+{'pid': 9116, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 18.38671875}
+{'pid': 9268, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 32.91015625}
+{'pid': 9388, 'name': 'Microsoft.Photos.exe', 'username': 'DC2\\ashinde05', 'vms': 62.28515625}
+{'pid': 9420, 'name': 'unsecapp.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.5546875}
+{'pid': 9432, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 187.546875}
+{'pid': 9524, 'name': 'TextInputHost.exe', 'username': 'DC2\\ashinde05', 'vms': 44.546875}
+{'pid': 9540, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 56.796875}
+{'pid': 9628, 'name': 'OneDrive.exe', 'username': 'DC2\\ashinde05', 'vms': 75.2578125}
+{'pid': 9688, 'name': 'SecurityHealthSystray.exe', 'username': 'DC2\\ashinde05', 'vms': 1.84765625}
+{'pid': 9720, 'name': 'SecurityHealthService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 4.61328125}
+{'pid': 9844, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 24.03515625}
+{'pid': 9848, 'name': 'tvnserver.exe', 'username': 'DC2\\ashinde05', 'vms': 1.57421875}
+{'pid': 9856, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.53515625}
+{'pid': 9864, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 9.85546875}
+{'pid': 9896, 'name': 'RtkAudUService64.exe', 'username': 'DC2\\ashinde05', 'vms': 3.3828125}
+{'pid': 9908, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 3.25390625}
+{'pid': 9968, 'name': 'WavesSvc64.exe', 'username': 'DC2\\ashinde05', 'vms': 212.5703125}
+{'pid': 9984, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 208.6015625}
+{'pid': 10272, 'name': 'python.exe', 'username': 'DC2\\ashinde05', 'vms': 7.06640625}
+{'pid': 10404, 'name': 'SentinelBrowserNativeHost.exe', 'username': 'DC2\\ashinde05', 'vms': 3.55078125}
+{'pid': 10508, 'name': 'WebexHost.exe', 'username': 'DC2\\ashinde05', 'vms': 9.79296875}
+{'pid': 10544, 'name': 'atmgr.exe', 'username': 'DC2\\ashinde05', 'vms': 73.04296875}
+{'pid': 10632, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 214.18359375}
+{'pid': 10664, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 6.7890625}
+{'pid': 10872, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 403.453125}
+{'pid': 10880, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 39.203125}
+{'pid': 10908, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 15.58203125}
+{'pid': 11120, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 25.06640625}
+{'pid': 11236, 'name': 'cmd.exe', 'username': 'DC2\\ashinde05', 'vms': 2.0703125}
+{'pid': 11248, 'name': 'conhost.exe', 'username': 'DC2\\ashinde05', 'vms': 6.55859375}
+{'pid': 11296, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 77.171875}
+{'pid': 11412, 'name': 'ShellExperienceHost.exe', 'username': 'DC2\\ashinde05', 'vms': 47.9453125}
+{'pid': 11420, 'name': 'OcsSystray.exe', 'username': 'DC2\\ashinde05', 'vms': 2.7265625}
+{'pid': 11428, 'name': 'WmiPrvSE.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 25.27734375}
+{'pid': 11448, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 11.0703125}
+{'pid': 11540, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 152.625}
+{'pid': 11564, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 16.0859375}
+{'pid': 11748, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 52.84765625}
+{'pid': 11800, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 208.84375}
+{'pid': 12000, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 77.3359375}
+{'pid': 12008, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 42.453125}
+{'pid': 12084, 'name': 'DCProcessMonitor.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.16015625}
+{'pid': 12120, 'name': 'dcagenttrayicon.exe', 'username': 'DC2\\ashinde05', 'vms': 5.7734375}
+{'pid': 12144, 'name': 'WmiPrvSE.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 34.7265625}
+{'pid': 12236, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\NETWORK SERVICE', 'vms': 5.390625}
+{'pid': 12368, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\LOCAL SERVICE', 'vms': 3.4765625}
+{'pid': 12988, 'name': 'cmd.exe', 'username': 'DC2\\ashinde05', 'vms': 2.89453125}
+{'pid': 13076, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 274.90625}
+{'pid': 13180, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 3.23046875}
+{'pid': 13268, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 194.7890625}
+{'pid': 13284, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.09765625}
+{'pid': 13288, 'name': 'dcondemand.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 8.24609375}
+{'pid': 13292, 'name': 'DellSupportAssistRemedationService.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 73.6953125}
+{'pid': 13316, 'name': 'Dell.TechHub.Instrumentation.UserProcess.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 42.046875}
+{'pid': 13384, 'name': 'Dell.DCF.UA.Bradbury.API.SubAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 52.9453125}
+{'pid': 13396, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.58203125}
+{'pid': 13460, 'name': 'Dell.TechHub.DataManager.SubAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 66.1796875}
+{'pid': 13480, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.5859375}
+{'pid': 13536, 'name': 'Dell.TechHub.Instrumentation.SubAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 97.86328125}
+{'pid': 13564, 'name': 'conhost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 6.54296875}
+{'pid': 13692, 'name': 'SgrmBroker.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 7.0}
+{'pid': 13996, 'name': 'SupportAssistAgent.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 168.06640625}
+{'pid': 14008, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 130.8984375}
+{'pid': 14060, 'name': 'uhssvc.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.41015625}
+{'pid': 14148, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 5.87109375}
+{'pid': 14228, 'name': 'slack.exe', 'username': 'DC2\\ashinde05', 'vms': 12.12890625}
+{'pid': 14384, 'name': 'MoUsoCoreWorker.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 15.04296875}
+{'pid': 14436, 'name': 'svchost.exe', 'username': 'DC2\\ashinde05', 'vms': 2.98828125}
+{'pid': 14504, 'name': 'plugin_host-3.3.exe', 'username': 'DC2\\ashinde05', 'vms': 45.34765625}
+{'pid': 14788, 'name': 'DDVDataCollector.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 60.421875}
+{'pid': 14884, 'name': 'DDVCollectorSvcApi.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 1.7890625}
+{'pid': 14896, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 32.5859375}
+{'pid': 14932, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 13.66015625}
+{'pid': 15080, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 16.86328125}
+{'pid': 15444, 'name': 'Code.exe', 'username': 'DC2\\ashinde05', 'vms': 88.64453125}
+{'pid': 15544, 'name': 'python.exe', 'username': 'DC2\\ashinde05', 'vms': 14.76953125}
+{'pid': 15788, 'name': 'svchost.exe', 'username': 'NT AUTHORITY\\SYSTEM', 'vms': 4.43359375}
+{'pid': 15808, 'name': 'conhost.exe', 'username': 'DC2\\ashinde05', 'vms': 8.0234375}
+{'pid': 15876, 'name': 'plugin_host-3.8.exe', 'username': 'DC2\\ashinde05', 'vms': 16.421875}
+{'pid': 16388, 'name': 'powershell.exe', 'username': 'DC2\\ashinde05', 'vms': 61.015625}
+{'pid': 16704, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 43.1171875}
+{'pid': 16952, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 186.89453125}
+{'pid': 17144, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 22.92578125}
+{'pid': 17160, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 30.4453125}
+{'pid': 17180, 'name': 'chrome.exe', 'username': 'DC2\\ashinde05', 'vms': 74.875}

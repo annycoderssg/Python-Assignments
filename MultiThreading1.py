@@ -11,7 +11,7 @@ def Task2( intValue ):
     print("PID of Task2 : ", os.getpid())
     print("Thread Id Task2 : ", threading.get_ident())
     for i in range(intValue):
-        print("Task2 : ", i)
+        print("Task1 : ", i)
 
 def main():
     print("Demonstration of Multi Threading")

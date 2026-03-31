@@ -3,22 +3,21 @@ import threading
 def Small( strString ):
     intSmallChars = 0
     for i in range(len(strString)):
-        if strString[i].islower():
+        if True ==  strString[i].islower():
             intSmallChars = intSmallChars + 1
-
+    
     print( "Number of small characters : ", intSmallChars )
 
 def Capital( strString ):
     intCaptialChars = 0
     for i in range(len(strString)):
-        if strString[i].isupper():
+        if True ==  strString[i].isupper():
             intCaptialChars = intCaptialChars + 1
-
+    
     print( "Number of Capital characters : ", intCaptialChars )
 
 def Digits( strString ):
-    intDigits = sum(1 for c in strString if c.isdigit())
-    print( "Number of Digits from String: ", intDigits )
+    print( "Number of Digits from String: ", len( strString ) )
 
 def main():
     strString = input( "Enter String: " )
